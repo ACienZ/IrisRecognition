@@ -49,6 +49,7 @@ classifier=tf.estimator.DNNClassifier(
     feature_columns=feature_columns,
     hidden_units=[10,20,10],
     n_classes=3,
+    #注意：更改模型后 比如更改隐含层神经元个数后 需要清空该输出文件夹 否则报错
     model_dir='./output',    #to remove warning:Using temporary folder as model directory
 )
 
